@@ -1,9 +1,12 @@
-import TextPressure from "../ui/TextPressure"
+import CircularText from "../ui/CircularText";
+import TextPressure from "../ui/TextPressure";
 
 const Hero = () => {
   return (
     <>
-      <div className="flex items-center justify-center h-screen">
+      {" "}
+      <div className="flex flex-col items-center justify-center h-screen">
+
         <div style={{ width: "80%", overflow: "hidden" }}>
           <TextPressure
             text="Hi There, I'm Keshav Soni!"
