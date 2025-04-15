@@ -49,7 +49,7 @@ const Projects = () => {
         {/* <div style={{ height: "100%", position: "relative" }}>
           <InfiniteMenu className="text-xl" items={items} />
         </div> */}
-        <div className="flex flex-row p-4 mx-6 shadow-2xl rounded-xl">
+        <div className="flex p-4 mx-6 shadow-2xl rounded-xl">
           <div className="flex flex-2/4 w-3/4 justify-around p-4 rounded-2xl">
             <MagicCard>
               <div className="p-4 flex flex-col items-center justify-center">
@@ -74,20 +74,47 @@ const Projects = () => {
                 </ShimmerButton>
               </div>
             </MagicCard>
+            </div>
+            <div className="flex flex-2/4 w-3/4 justify-around p-4 rounded-2xl">
+              <MagicCard>
+                <div className="p-4 flex flex-col items-center justify-center">
+                  <Image
+                    src="/images/pic15.png"
+                    alt="pic14"
+                    width={400}
+                    height={500}
+                    className="rounded-lg w-fit"
+                  />
+                  <div className="flex flex-col items-center justify-center text-center my-6">
+                    <p className="m-4 text-2xl font-bold">AI ESSAY GENERATOR</p>
+                    <span className="text-lg italic ">
+                      An AI-powered web app that generates essays for you.
+                    </span>
+                  </div>
 
+                  <ShimmerButton>
+                    {" "}
+                    <a href="https://aiessaypro.netlify.app/" target="_blank">
+                      View!
+                    </a>
+                  </ShimmerButton>
+                </div>
+              </MagicCard>
+            </div>
+            <div className="flex flex-2/4 w-3/4 justify-around p-4 rounded-2xl">
             <MagicCard>
               <div className="p-4 flex flex-col items-center justify-center">
                 <Image
-                  src="/images/pic15.png"
+                  src="/images/pic12.png"
                   alt="pic14"
                   width={400}
                   height={500}
                   className="rounded-lg w-fit"
                 />
                 <div className="flex flex-col items-center justify-center text-center my-6">
-                  <p className="m-4 text-2xl font-bold">AI ESSAY GENERATOR</p>
+                  <p className="m-4 text-2xl font-bold">KREATIVEVILLA</p>
                   <span className="text-lg italic ">
-                    An AI-powered web app that generates essays for you.
+                  A Social Media Marketing Agency.
                   </span>
                 </div>
 
