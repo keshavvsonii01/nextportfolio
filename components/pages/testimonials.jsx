@@ -21,20 +21,20 @@ const Testimonials = () => {
           <div className="w-full  flex flex-col items-center justify-center">
             <SpotlightCard
               className="custom-spotlight-card flex flex-col w-full hover:scale-106 transition-transform duration-200"
-              spotlightColor="rgba(0, 229, 255, 0.2)"
+              spotlightColor="rgba(241, 228, 238, 0.8)"
             >
-              <div class="flex flex-1 items-center text-center gap-x-4 mt-6">
-                <div class="w-14 h-14 flex-shrink-0 rounded-full overflow-hidden border border-amber-50">
+              <div className="flex flex-1 items-center text-center gap-x-4 mt-6">
+                <div className="w-14 h-14 flex-shrink-0 rounded-full overflow-hidden border border-amber-50">
                   <img
                     alt="Rishi Singh"
                     loading="lazy"
-                    class="object-cover w-full h-full"
+                    className="object-cover w-full h-full"
                     src="./images/rishisingh.webp"
                   />
                 </div>
-                <div class="gap-y-0 flex text-base 2xl:text-h5 flex-col">
-                  <span class="tracking-base">Rishi Pratap Singh</span>
-                  <span class="leading-base text-pretty  ">
+                <div className="gap-y-0 flex text-base 2xl:text-h5 flex-col">
+                  <span className="tracking-base">Rishi Pratap Singh</span>
+                  <span className="leading-base text-pretty  ">
                     <a href="https://rishipratap.com/">Video Editor</a>
                   </span>
                 </div>
@@ -43,7 +43,7 @@ const Testimonials = () => {
               <hr />
               <br />
               <div className="flex items-center justify-center gap-x-4">
-                <p class=" text-lg mt-2 text-center">
+                <p className=" text-lg mt-2 text-center">
                   "I've had the pleasure of working with Keshav, he's just
                   exceptional — clear communication, punctual, and a development
                   visionary. He immediately knows what the client needs. <br />A
@@ -55,20 +55,20 @@ const Testimonials = () => {
           <div className="w-full my-2 flex flex-col items-center justify-center">
             <SpotlightCard
               className="custom-spotlight-card w-full hover:scale-106 transition-transform duration-200"
-              spotlightColor="rgba(0, 229, 255, 0.2)"
+              spotlightColor="rgba(241, 228, 238, 0.8)"
             >
-              <div class="flex flex-1 items-center text-center gap-x-4 mt-6">
-                <div class="w-14 h-14 flex-shrink-0 rounded-full overflow-hidden border border-amber-50">
+              <div className="flex flex-1 items-center text-center gap-x-4 mt-6">
+                <div className="w-14 h-14 flex-shrink-0 rounded-full overflow-hidden border border-amber-50">
                   <img
                     alt="Harsh Verma"
                     loading="lazy"
-                    class="object-cover w-full h-full"
+                    className="object-cover w-full h-full"
                     src="./images/harshverma.webp"
                   />
                 </div>
-                <div class="gap-y-0 flex text-base 2xl:text-h5 flex-col">
-                  <span class="tracking-base">Harsh Verma</span>
-                  <span class="leading-base text-pretty  ">
+                <div className="gap-y-0 flex text-base 2xl:text-h5 flex-col">
+                  <span className="tracking-base">Harsh Verma</span>
+                  <span className="leading-base text-pretty  ">
                     <a href="https://kreativevilla.in/">
                       Founder@KreativeVilla
                     </a>
@@ -79,7 +79,7 @@ const Testimonials = () => {
               <hr />
               <br />
               <div className="flex items-center justify-center gap-x-4">
-                <p class=" text-lg mt-2 text-center">
+                <p className=" text-lg mt-2 text-center">
                   "Keshav's design and development for KreativeVilla, a social
                   marketing website, surpassed standards, embodying speed,
                   skills and commitnent. <br />

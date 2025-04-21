@@ -1,4 +1,5 @@
 import About from "@/components/pages/about";
+import Contact from "@/components/pages/contact";
 import FastScroller from "@/components/pages/fast-scroller";
 import Hero from "@/components/pages/hero";
 import Projects from "@/components/pages/projects";
@@ -14,6 +15,7 @@ export default function Home() {
       <Whatido />
       <Projects />
       <Testimonials />
+      <Contact />
     </>
   );
 }
