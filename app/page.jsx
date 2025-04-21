@@ -8,13 +8,12 @@ import Whatido from "@/components/pages/whatido";
 export default function Home() {
   return (
     <>
-  
-        <Hero />
-        <FastScroller />
-        <About />
-        <Whatido />
-        <Projects />
-        <Testimonials />
+      <Hero />
+      <FastScroller />
+      <About />
+      <Whatido />
+      <Projects />
+      <Testimonials />
     </>
   );
 }
