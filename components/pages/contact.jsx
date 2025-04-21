@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <>
       <div
-        className=" flex flex-col items-center justify-center p-2 text-center h-dvh"
+        className=" flex flex-col items-center justify-center text-center h-dvh"
         id="contact"
       >
         <h1 className="text-xl md:text-2xl md:font-light border-b-2 border-stone-300 m-4">
