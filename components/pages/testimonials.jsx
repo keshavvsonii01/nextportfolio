@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <>
       <div className="h-svh mt-6">
-        <div className="flex flex-col items-center w-full my-2">
+        <div className="flex flex-col items-center w-full mt-2">
           <SplitText
             text="DON'T TAKE MY WORD FOR IT."
             className="text-[5.5rem] font-extrabold text-center m-2"
@@ -18,7 +18,7 @@ const Testimonials = () => {
           />
         </div>
         <div className="flex flex-col p-6 w-2/3 items-center justify-center mx-auto">
-          <div className="w-full my-2 flex flex-col items-center justify-center">
+          <div className="w-full  flex flex-col items-center justify-center">
             <SpotlightCard
               className="custom-spotlight-card flex flex-col w-full hover:scale-106 transition-transform duration-200"
               spotlightColor="rgba(0, 229, 255, 0.2)"
