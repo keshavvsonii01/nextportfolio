@@ -1,16 +1,34 @@
 import Link from "next/link";
-
 import { GalleryVerticalEnd } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { useState } from "react";
+import axios from "axios";
 
 export function LoginForm({ className, ...props }) {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [details, setDetails] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try{
+      const response = await axios.post("/api/contact", {
+        name,
+        email,
+        details,
+      })
+    }
+    catch (error) {
+      console.error("Error submitting form:", error);
+    }
+    // Add your form submission logic here (e.g., send data to an API)
+  };
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col items-center gap-2">
             <a
@@ -25,19 +43,23 @@ export function LoginForm({ className, ...props }) {
             <h1 className="text-2xl font-bold">Hi There, I'm Keshav Soni.</h1>
             <div className="text-center text-sm">
               I would Love to hear from you.{" "}
-              {/* <a href="#" className="underline underline-offset-4">
-                Sign up
-              </a> */}
             </div>
           </div>
           <div className="flex flex-col gap-6">
             <div className="grid gap-3">
               <Label htmlFor="Name">Your Name:</Label>
-              <Input id="Name" type="text" placeholder="Your Name" required />
+              <Input
+                id="Name"
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+                placeholder="Your Name"
+                required
+              />
               <Label htmlFor="Email">Email</Label>
               <Input
                 id="Email"
                 type="email"
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="m@example.com"
                 required
               />
@@ -46,11 +68,12 @@ export function LoginForm({ className, ...props }) {
                 id="Details"
                 className=" h-24 rounded-md border p-2 placeholder:text-xs placeholder:lg:text-sm"
                 type="text"
+                onChange={(e) => setDetails(e.target.value)}
                 placeholder="Description of your project"
                 required
               />
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit"  className="w-full">
               Submit
             </Button>
           </div>
