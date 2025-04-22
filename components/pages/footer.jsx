@@ -8,7 +8,7 @@ const Footer = () => {
           <span className="hover:underline cursor-pointer">
             <Link href="#hero">Home</Link>
           </span>
-          <span className="">© 2024 KESHAV SONI</span>
+          <span className="">© 2025 KESHAV SONI</span>
           <span className="hover:underline cursor-pointer">
             <Link href="/contact">Contact</Link>
           </span>
