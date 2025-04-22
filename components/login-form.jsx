@@ -26,6 +26,8 @@ export function LoginForm({ className, ...props }) {
     catch (error) {
       console.error("Error submitting form:", error);
     }
+    // Reset form fields after submission
+
     // Add your form submission logic here (e.g., send data to an API)
   };
   return (
