@@ -10,7 +10,7 @@ const Footer = () => {
           </span>
           <span className="">© 2024 KESHAV SONI</span>
           <span className="hover:underline cursor-pointer">
-            <Link href="/Contact">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </span>
         </div>
       </div>
