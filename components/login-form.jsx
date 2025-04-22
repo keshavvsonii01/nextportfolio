@@ -17,7 +17,7 @@ export function LoginForm({ className, ...props }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      const response = await axios.post("/api/contact", {
+      const response = await axios.post("/api/details", {
         name,
         email,
         details,
