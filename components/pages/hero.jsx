@@ -25,14 +25,14 @@ const Hero = () => {
           />
         </div>{" "}
       </div>
-      <div className="absolute p-15 bottom-0 right-20 overflow-hidden z-10">
-        <CircularText
-          text="Keshav*Soni*"
-          onHover="speedUp"
-          spinDuration={10}
-          className="custom-class"
-        />
-      </div>
+      <div className="absolute p-12 bottom-0 right-8 z-50">
+          <CircularText
+            text="Keshav*Soni*"
+            onHover="speedUp"
+            spinDuration={10}
+            className="custom-class"
+          />
+        </div>
     </>
   );
 };
