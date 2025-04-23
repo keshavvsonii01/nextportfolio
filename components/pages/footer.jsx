@@ -34,37 +34,37 @@ function Footer() {
             <div className="flex flex-col gap-y-2 md:gap-y-1">
               <Link
                 href={"#hero"}
-                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit"
+                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit hover:text-slate-200"
               >
                 <span className="link1">Home</span>
               </Link>
               <Link
                 href={"#about"}
-                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit"
+                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit hover:text-slate-200"
               >
                 <span className="link1">About</span>
               </Link>
               <Link
                 href={"#Services"}
-                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit"
+                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit hover:text-slate-200"
               >
                 <span className="link1">Services</span>
               </Link>
               <Link
                 href={"#Works"}
-                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit"
+                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit hover:text-slate-200"
               >
                 <span className="link1">Works</span>
               </Link>
               <Link
                 href={"#Testimonials"}
-                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit"
+                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit hover:text-slate-200"
               >
                 <span className="link1">Reviews</span>
               </Link>
               <Link
                 href={"/contact"}
-                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit"
+                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit hover:text-slate-200"
               >
                 <span className="link1">Contact</span>
               </Link>
@@ -77,14 +77,14 @@ function Footer() {
             <div className="flex flex-col gap-y-2 md:gap-y-1">
               <a
                 target="_blank"
-                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
+                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit hover:text-slate-200"
                 href="https://www.linkedin.com/in/keshavvsoni01/"
               >
                 <span className="link1">Linkedin</span>
               </a>
               <a
                 target="_blank"
-                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
+                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit hover:text-slate-200"
                 href="https://github.com/keshavvsonii01"
               >
                 <span className="link1">Github</span>
@@ -98,28 +98,28 @@ function Footer() {
             <div className="flex flex-col gap-y-2 md:gap-y-1">
               <a
                 target="_blank"
-                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
+                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit hover:text-slate-200"
                 href="https://www.framer.com/motion/"
               >
                 <span className="link1">Framer Motion</span>
               </a>
               <a
                 target="_blank"
-                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
+                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit hover:text-slate-200"
                 href="https://ui.shadcn.com/"
               >
                 <span className="link1">ShadcnUI</span>
               </a>
               <a
                 target="_blank"
-                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
+                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit hover:text-slate-200"
                 href="https://www.reactbits.dev/"
               >
                 <span className="link1">React Bits</span>
               </a>
               <a
                 target="_blank"
-                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
+                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit hover:text-slate-200"
                 href="https://keshavsoni.netlify.app/"
               >
                 <span className="link1">Portfolio V1</span>
