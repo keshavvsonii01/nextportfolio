@@ -1,9 +1,7 @@
-'use client';
-
+"use client";
 
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-
 
 const getRotationTransition = (duration, from, loop = true) => ({
   from: from,
@@ -19,7 +17,7 @@ const getTransition = (duration, from) => ({
   scale: {
     type: "spring",
     damping: 20,
-    stiffness: 300,
+    stiffness: 100,
   },
 });
 
@@ -92,7 +90,7 @@ const CircularText = ({
   return (
     <motion.div
       initial={{ rotate: 0 }}
-      className={`mx-auto rounded-full w-[200px] h-[200px] text-white font-black text-center cursor-pointer origin-center ${className}`}
+      className={`mx-auto rounded-full w-[130px] h-[130px] text-white font-extralight text-center cursor-pointer origin-center ${className}`}
       animate={controls}
       onUpdate={(latest) => setCurrentRotation(Number(latest.rotate))}
       onMouseEnter={handleHoverStart}
@@ -108,7 +106,7 @@ const CircularText = ({
         return (
           <span
             key={i}
-            className="absolute inline-block inset-0 text-2xl transition-all duration-500 ease-[cubic-bezier(0,0,0,1)]"
+            className="absolute inline-block inset-0 text-xl transition-all duration-500 ease-[cubic-bezier(0,0,0,1)]"
             style={{ transform, WebkitTransform: transform }}
           >
             {letter}

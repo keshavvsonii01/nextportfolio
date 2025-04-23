@@ -4,9 +4,11 @@ import TextPressure from "../ui/TextPressure";
 const Hero = () => {
   return (
     <>
-      {" "}
-      <div className="flex flex-col items-center justify-center h-screen" id="hero">
-
+      <div className=""></div>{" "}
+      <div
+        className="flex flex-col items-center justify-center h-screen"
+        id="hero"
+      >
         <div style={{ width: "80%", overflow: "hidden" }}>
           <TextPressure
             text="Hi There, I'm Keshav Soni!"
@@ -21,7 +23,15 @@ const Hero = () => {
             minFontSize={36}
             className="text-9xl"
           />
-        </div>
+        </div>{" "}
+      </div>
+      <div className="absolute p-15 bottom-0 right-20 overflow-hidden z-10">
+        <CircularText
+          text="Keshav*Soni*"
+          onHover="speedUp"
+          spinDuration={10}
+          className="custom-class"
+        />
       </div>
     </>
   );
