@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Keshav Soni",
-  description: "Portfolio Made by Keshav Soni using Next.js",
+  description: "Portfolio Made by Keshav Soni using Next.js, Tailwind CSS, Framer Motion, Shadcn/ui, magicUI, ReactBits, Lenis, and more.",
 };
 
 export default function RootLayout({ children }) {
