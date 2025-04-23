@@ -4,7 +4,7 @@ import SpotlightCard from "../ui/SpotLightCard";
 const Testimonials = () => {
   return (
     <>
-      <div className="h-svh mt-6">
+      <div className="h-svh mt-6" id="Testimonials">
         <div className="flex flex-col items-center w-full mt-2">
           <SplitText
             text="DON'T TAKE MY WORD FOR IT."

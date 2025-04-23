@@ -33,7 +33,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="h-svh">
+      <div className="h-svh" id="Works">
         <div className="h-screen bg-black text-white  p-8 mx-4  shadow-xl rounded-lg">
           <div className="flex flex-col items-center w-full my-2">
             <SplitText

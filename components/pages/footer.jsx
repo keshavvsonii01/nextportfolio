@@ -85,13 +85,6 @@ function Footer() {
               <a
                 target="_blank"
                 className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
-                href="https://www.instagram.com/_keshavv.05/"
-              >
-                <span className="link1">Instagram</span>
-              </a>
-              <a
-                target="_blank"
-                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
                 href="https://github.com/keshavvsonii01"
               >
                 <span className="link1">Github</span>

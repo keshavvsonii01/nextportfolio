@@ -5,7 +5,7 @@ import BlurText from "../ui/BlurText";
 const About = () => {
   return (
     <>
-      <div className="p-6 mt-4 h-screen flex flex-col items-center justify-center">
+      <div className="p-6 mt-4 h-screen flex flex-col items-center justify-center" id="about">
         <TrueFocus
           sentence="About Me"
           manualMode={false}
