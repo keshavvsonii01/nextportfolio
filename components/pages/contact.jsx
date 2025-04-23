@@ -9,7 +9,7 @@ const Contact = () => {
           Got a Project? Need an unfair advantage?
         </h1>
         <div className="p-3 md:p-6">
-          <a href="mailto:keshavvsonii01@gmail.com?subject=Hey, Got a project">
+          <a href="/contact">
             <img
               alt="Get In Touch"
               loading="lazy"
