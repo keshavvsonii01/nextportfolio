@@ -106,14 +106,21 @@ function Footer() {
               <a
                 target="_blank"
                 className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
-                href="https://www.figma.com/"
+                href="https://ui.shadcn.com/"
               >
-                <span className="link1">Figma</span>
+                <span className="link1">ShadcnUI</span>
               </a>
               <a
                 target="_blank"
                 className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
-                href="https://keshavsonii.netlify.app/"
+                href="https://www.reactbits.dev/"
+              >
+                <span className="link1">React Bits</span>
+              </a>
+              <a
+                target="_blank"
+                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit"
+                href="https://keshavsoni.netlify.app/"
               >
                 <span className="link1">Portfolio V1</span>
               </a>
