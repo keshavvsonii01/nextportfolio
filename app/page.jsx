@@ -7,7 +7,9 @@ import Projects from "@/components/pages/projects";
 import Testimonials from "@/components/pages/testimonials";
 import Whatido from "@/components/pages/whatido";
 
+
 export default function Home() {
+ 
   return (
     <>
       <Hero />
