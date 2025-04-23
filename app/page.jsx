@@ -6,20 +6,26 @@ import Hero from "@/components/pages/hero";
 import Projects from "@/components/pages/projects";
 import Testimonials from "@/components/pages/testimonials";
 import Whatido from "@/components/pages/whatido";
-
+import LenisWrapper from "@/components/LenisWrapper";
+import "lenis/dist/lenis.css";
 
 export default function Home() {
- 
   return (
     <>
-      <Hero />
+      <LenisWrapper>
+        <Hero />
+      </LenisWrapper>
+
       <FastScroller />
-      <About />
-      <Whatido />
-      <Projects />
-      <Testimonials />
-      <Contact />
-      <Footer />
+
+      <LenisWrapper>
+        <About />
+        <Whatido />
+        <Projects />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </LenisWrapper>
     </>
   );
 }
