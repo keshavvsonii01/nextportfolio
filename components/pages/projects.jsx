@@ -33,12 +33,12 @@ const Projects = () => {
 
   return (
     <>
-      <div className="h-svh" id="Works">
-        <div className="h-screen bg-black text-white  p-8 mx-4  shadow-xl rounded-lg">
+      <div className="h-fit" id="Works">
+        <div className="h-fit bg-black text-white  p-8 mx-4  shadow-xl rounded-lg">
           <div className="flex flex-col items-center w-full my-2">
             <SplitText
               text="PROJECTS."
-              className="text-8xl font-extrabold text-center p-2 m-2"
+              className="text-[4rem] md:text-[4.4rem] lg:text-8xl font-extrabold text-center p-2 m-2"
               delay={200}
               animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
               animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
@@ -50,7 +50,7 @@ const Projects = () => {
           {/* <div style={{ height: "100%", position: "relative" }}>
           <InfiniteMenu className="text-xl" items={items} />
         </div> */}
-          <div className="flex p-2 mx-6 mb-4 shadow-2xl rounded-xl">
+          <div className="flex flex-wrap p-2 mx-8 gap-y-4 shadow-2xl rounded-xl">
             <div className="flex flex-2/4 w-3/4 justify-around p-4 rounded-2xl">
               <MagicCard>
                 <div className="p-4 flex flex-col items-center justify-center">
