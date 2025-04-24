@@ -78,7 +78,7 @@ const SplitText = ({
               </animated.span>
             );
           })}
-          <span style={{ display: 'inline-block', width: '0.3em' }}>&nbsp;</span>
+          <span style={{ display: 'inline-block', width: '0.25em' }}>&nbsp;</span>
         </span>
       ))}
     </p>
