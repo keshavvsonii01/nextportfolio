@@ -25,11 +25,11 @@ const Hero = () => {
           />
         </div>{" "}
       </div>
-      <div className="absolute p-12 bottom-0 right-8 z-50">
+      <div className="absolute p-6 md:p-10 lg:p-14 bottom-0 right-0 md:right-8 z-50">
           <CircularText
             text="Keshav*Soni*"
             onHover="speedUp"
-            spinDuration={10}
+            spinDuration={8}
             className="custom-class"
           />
         </div>
