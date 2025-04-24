@@ -8,7 +8,7 @@ const Testimonials = () => {
         <div className="flex flex-col items-center w-full mt-2">
           <SplitText
             text="DON'T TAKE MY WORD FOR IT."
-            className="text-[4rem] font-extrabold text-center m-2"
+            className="text-[3rem] md:text-[3.8rem] lg:text-[4.2rem] font-extrabold text-center m-2"
             delay={75}
             animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
             animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
@@ -17,7 +17,7 @@ const Testimonials = () => {
             rootMargin="-50px"
           />
         </div>
-        <div className="flex flex-col gap-y-4 p-6 w-2/3 items-center justify-center mx-auto">
+        <div className="flex flex-col gap-y-4 p-6 w-4/5 md:w-3/4 lg:w-2/3 items-center justify-center mx-auto">
           <div className="w-full  flex flex-col items-center justify-center">
             <SpotlightCard
               className="custom-spotlight-card flex flex-col w-full hover:scale-106 transition-transform duration-200"
@@ -33,8 +33,8 @@ const Testimonials = () => {
                   />
                 </div>
                 <div className="gap-y-0 flex text-base flex-col">
-                  <span className="tracking-base">Rishi Pratap Singh</span>
-                  <span className="leading-base text-pretty  ">
+                  <span className="tracking-base text-sm">Rishi Pratap Singh</span>
+                  <span className="leading-base text-pretty text-sm ">
                     <a href="https://rishipratap.com/">Video Editor</a>
                   </span>
                 </div>
@@ -42,7 +42,7 @@ const Testimonials = () => {
               <br />
               <hr />
               <br />
-              <div className="flex items-center p-5 justify-center gap-x-4">
+              <div className="flex items-center p-3  md:p-5 justify-center gap-x-4">
                 <p className=" text-medium  md:text-lg  mt-2 text-center">
                   "I've had the pleasure of working with Keshav, he's just
                   exceptional — clear communication, punctual, and a development
@@ -67,8 +67,8 @@ const Testimonials = () => {
                   />
                 </div>
                 <div className="gap-y-0 flex text-base 2xl:text-h5 flex-col">
-                  <span className="tracking-base">Harsh Verma</span>
-                  <span className="leading-base text-pretty  ">
+                  <span className="tracking-base text-sm">Harsh Verma</span>
+                  <span className="leading-base text-pretty text-sm ">
                     <a href="https://kreativevilla.in/">
                       Founder@KreativeVilla
                     </a>
@@ -78,11 +78,11 @@ const Testimonials = () => {
               <br />
               <hr />
               <br />
-              <div className="flex items-center p-5 justify-center gap-x-4">
+              <div className="flex items-center p-3 md:p-5 justify-center gap-x-4">
                 <p className=" text-medium md:text-lg mt-2 text-center">
                   "Keshav's design and development for KreativeVilla, a social
                   marketing website, surpassed standards, embodying speed,
-                  skills and commitnent. <br />
+                  skills and commitment. <br />
                   We're all up for future projects with him."
                 </p>
               </div>

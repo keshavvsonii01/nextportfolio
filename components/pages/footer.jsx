@@ -28,7 +28,7 @@ function Footer() {
       <footer className="px-6 sm:px-[4%] 3xl:px-[10%] pb-8 3xl:pb-16 pt-8 sm:pt-[5%] relative mt-2">
         <div className="grid grid-cols-2 gap-y-7 gap-x-7 lg:gap-y-10 md:grid-cols-12 md:gap-x-10">
           <div className="md:col-span-6 lg:col-span-6 flex flex-col text-xl">
-            <span className="flex link-text font-bold uppercase text-3xl mb-3 border-b-2 border-stone-600">
+            <span className="flex link-text font-bold uppercase text-[1.6rem] mb-3 border-b-2 border-stone-600">
               Navigation
             </span>
             <div className="flex flex-col gap-y-2 md:gap-y-1">
@@ -71,7 +71,7 @@ function Footer() {
             </div>
           </div>
           <div className="md:col-span-3 lg:col-span-3 flex flex-col text-xl">
-            <span className="flex font-bold uppercase link-text text-3xl mb-3 border-b-2 border-stone-600">
+            <span className="flex font-bold uppercase link-text text-[1.6rem] mb-3 border-b-2 border-stone-600">
               Socials
             </span>
             <div className="flex flex-col gap-y-2 md:gap-y-1">
@@ -92,7 +92,7 @@ function Footer() {
             </div>
           </div>
           <div className="col-span-2 md:col-span-3 lg:col-span-3 flex flex-col text-xl">
-            <span className="flex pb-1 font-bold uppercase link-text mb-3 text-3xl border-b-2 border-stone-600">
+            <span className="flex pb-1 font-bold uppercase link-text mb-3 text-[1.6rem] border-b-2 border-stone-600">
               Resources
             </span>
             <div className="flex flex-col gap-y-2 md:gap-y-1">

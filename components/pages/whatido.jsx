@@ -29,8 +29,8 @@ const Whatido = () => {
       <div className="" id="Services">
         <div className="flex flex-col items-center w-full my-2">
           <SplitText
-            text="WHAT I DO."
-            className="text-[4rem] md:text-[4.4rem] lg:text-8xl font-extrabold text-center p-2 m-2"
+            text="WHAT I DO"
+            className="text-[3.3rem] md:text-[4.4rem] lg:text-8xl font-extrabold text-center mt-4 p-4"
             delay={200}
             animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
             animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
