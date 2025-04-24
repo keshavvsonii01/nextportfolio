@@ -9,7 +9,7 @@ export function MagicCard({
   className,
   gradientSize = 300,
   gradientColor = "#262626",
-  gradientOpacity = 0.9,
+  gradientOpacity = 1.5,
   gradientFrom = "#9E7AFF",
   gradientTo = "#FE8BBB"
 }) {

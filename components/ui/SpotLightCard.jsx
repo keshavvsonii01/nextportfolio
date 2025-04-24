@@ -1,8 +1,12 @@
-'use client';
+"use client";
 
 import { useRef, useState } from "react";
 
-const SpotlightCard = ({ children, className = "", spotlightColor = "rbg(219, 213, 213)" }) => {
+const SpotlightCard = ({
+  children,
+  className = "",
+  spotlightColor = "rbg(219, 213, 213)",
+}) => {
   const divRef = useRef(null);
   const [isFocused, setIsFocused] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
