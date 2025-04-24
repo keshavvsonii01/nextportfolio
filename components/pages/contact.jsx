@@ -13,7 +13,7 @@ const Contact = () => {
             <img
               alt="Get In Touch"
               loading="lazy"
-              className="object-cover w-full h-full"
+              className=" w-full h-full"
               src="./images/getintouch.svg"
             />
           </a>
