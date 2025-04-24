@@ -5,7 +5,10 @@ import BlurText from "../ui/BlurText";
 const About = () => {
   return (
     <>
-      <div className="p-6 mt-4 h-screen flex flex-col items-center justify-center" id="about">
+      <div
+        className="p-6 mt-4 h-svh flex flex-col items-center justify-center"
+        id="about"
+      >
         <TrueFocus
           sentence="About Me"
           manualMode={false}
@@ -15,15 +18,15 @@ const About = () => {
           pauseBetweenAnimations={0.8}
           glowColor="rgba(209,202,222, 0.6)"
         />
-        <div className="p-2 text-center my-8">
+        <div className="p-2 text-center mt-8 md:mb-4 lg:mb-8">
           <TiltedCard
             imageSrc="/images/aboutme.jpg"
             altText="Keshav Soni"
             captionText="Keshav Soni"
-            containerHeight="400px"
-            containerWidth="800px"
-            imageHeight="400px"
-            imageWidth="800px"
+            containerHeight="80%"
+            containerWidth="100%"
+            imageHeight="52vh"
+            imageWidth="60vw"
             rotateAmplitude={10}
             scaleOnHover={1.05}
             showMobileWarning={false}
@@ -32,13 +35,13 @@ const About = () => {
             overlayContent={<p className="tilted-card-demo-text"></p>}
           />
         </div>
-        <div className="text-center mt-4">
+        <div className="text-center  mt-4">
           <BlurText
             text="Empowering all-scale startups with custom web experiences that are memorable and drive success. With a passion for design and development, I take projects from ideation to launch, ensuring a seamless journey that leaves a lasting impact in the digital landscape."
             delay={50}
             animateBy="words"
             direction="top"
-            className="text-2xl my-4 line-clamp-3"
+            className="text-lg font-light md:font-medium lg:font-normal md:text-xl lg:text-2xl my-4"
           />
         </div>
       </div>
