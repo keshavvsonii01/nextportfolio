@@ -35,13 +35,13 @@ const About = () => {
             overlayContent={<p className="tilted-card-demo-text"></p>}
           />
         </div>
-        <div className="text-center  mt-4">
+        <div className={`text-center mt-4`}>
           <BlurText
             text="Empowering all-scale startups with custom web experiences that are memorable and drive success. With a passion for design and development, I take projects from ideation to launch, ensuring a seamless journey that leaves a lasting impact in the digital landscape."
             delay={50}
             animateBy="words"
             direction="top"
-            className="text-lg font-light md:font-medium lg:font-normal md:text-xl lg:text-2xl my-4"
+            className="text-lg  md:font-medium lg:font-normal md:text-xl lg:text-2xl my-4"
           />
         </div>
       </div>
