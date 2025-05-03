@@ -17,7 +17,7 @@ const Testimonials = () => {
             rootMargin="-50px"
           />
         </div>
-        <div className="flex flex-col gap-y-4 p-6 w-4/5 md:w-3/4 lg:w-2/3 items-center justify-center mx-auto">
+        <div className="flex flex-col gap-y-4 p-4 sm:p-6 w-4/5 md:w-3/4 lg:w-2/3 items-center justify-center mx-auto">
           <div className="w-full  flex flex-col items-center justify-center">
             <SpotlightCard
               className="custom-spotlight-card flex flex-col w-full hover:scale-106 transition-transform duration-200"

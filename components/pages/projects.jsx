@@ -51,7 +51,7 @@ const Projects = () => {
           <InfiniteMenu className="text-xl" items={items} />
         </div> */}
           <div className="flex flex-wrap p-2 gap-y-4 shadow-2xl rounded-xl">
-            <div className="flex flex-2/4 w-3/4 justify-around p-4 rounded-2xl">
+            <div className="flex flex-2/4 w-3/4 justify-around sm:p-4 rounded-2xl">
               <MagicCard>
                 <div className="p-4 flex flex-col items-center justify-center">
                   <Image
@@ -76,7 +76,7 @@ const Projects = () => {
                 </div>
               </MagicCard>
             </div>
-            <div className="flex flex-2/4 w-3/4 justify-around p-4 rounded-2xl">
+            <div className="flex flex-2/4 w-3/4 justify-around sm:p-4 rounded-2xl">
               <MagicCard>
                 <div className="p-4 flex flex-col items-center justify-center">
                   <Image
@@ -102,7 +102,7 @@ const Projects = () => {
                 </div>
               </MagicCard>
             </div>
-            <div className="flex flex-2/4 w-3/4 justify-around p-4 rounded-2xl">
+            <div className="flex flex-2/4 w-3/4 justify-around sm:p-4 rounded-2xl">
               <MagicCard>
                 <div className="p-4 flex flex-col items-center justify-center">
                   <Image

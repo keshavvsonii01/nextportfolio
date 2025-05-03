@@ -26,8 +26,8 @@ const Whatido = () => {
   ];
   return (
     <>
-      <div className="" id="Services">
-        <div className="flex flex-col items-center w-full my-2">
+      <div className="h-dvh m-2" id="Services">
+        <div className="flex flex-col items-center w-full mt-12 sm:my-4">
           <SplitText
             text="WHAT I DO"
             className="text-[3.3rem] md:text-[4.4rem] lg:text-8xl font-extrabold text-center mt-4 p-4"

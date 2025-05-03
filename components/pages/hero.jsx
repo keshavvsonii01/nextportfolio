@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <div className=""></div>{" "}
       <div
-        className="flex flex-col items-center justify-center h-screen"
+        className="flex flex-col items-center justify-center h-dvh"
         id="hero"
       >
         <div style={{ width: "80%", overflow: "hidden" }}>

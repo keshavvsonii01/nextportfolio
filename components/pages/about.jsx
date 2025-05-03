@@ -6,9 +6,10 @@ const About = () => {
   return (
     <>
       <div
-        className="p-6 mt-4 h-svh flex flex-col items-center justify-center"
+        className="p-6 mt-6 h-dvh flex flex-col items-center justify-center"
         id="about"
       >
+        <div className="p-8 mt-24 md:mt-0 lg:mt-4">
         <TrueFocus
           sentence="About Me"
           manualMode={false}
@@ -18,6 +19,8 @@ const About = () => {
           pauseBetweenAnimations={0.8}
           glowColor="rgba(209,202,222, 0.6)"
         />
+        </div>
+       
         <div className="p-2 text-center mt-8 md:mb-4 lg:mb-8">
           <TiltedCard
             imageSrc="/images/aboutme.jpg"
@@ -41,7 +44,7 @@ const About = () => {
             delay={50}
             animateBy="words"
             direction="top"
-            className="text-lg  md:font-medium lg:font-normal md:text-xl lg:text-2xl my-4"
+            className="text-medium sm:text-lg md:font-medium lg:font-normal md:text-xl lg:text-2xl my-4"
           />
         </div>
       </div>
