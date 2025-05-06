@@ -1,3 +1,5 @@
+import CircularText from "../ui/CircularText";
+
 const Loader = ({ fadeOut }) => {
   return (
     <>
@@ -10,7 +12,12 @@ const Loader = ({ fadeOut }) => {
         }
       `}
       >
-        <h1 className="text-3xl font-bold">Loading...</h1>
+        <CircularText
+          text="Keshav*Soni*"
+          onHover="speedUp"
+          spinDuration={8}
+          className="custom-class"
+        />
       </div>
     </>
   );
