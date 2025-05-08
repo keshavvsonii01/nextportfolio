@@ -9,10 +9,13 @@ import Whatido from "@/components/pages/whatido";
 import LenisWrapper from "@/components/LenisWrapper";
 import "lenis/dist/lenis.css";
 
-
 export const metadata = {
   title: "Keshav Soni",
-  description: "Portfolio Made by Keshav Soni using Next.js, Tailwind CSS, Framer Motion, Shadcn/ui, magicUI, ReactBits, Lenis, and more.",
+  description:
+    "Portfolio Made by Keshav Soni using Next.js, Tailwind CSS, Framer Motion, Shadcn/ui, magicUI, ReactBits, Lenis, and more.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function Home() {
