@@ -14,22 +14,29 @@ export function LoginForm({ className, ...props }) {
   const [email, setEmail] = useState("");
   const [details, setDetails] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try{
-      const response = await axios.post("/api/details", {
-        name,
-        email,
-        details,
-      })
-    }
-    catch (error) {
-      console.error("Error submitting form:", error);
-    }
-    // Reset form fields after submission
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    // Add your form submission logic here (e.g., send data to an API)
-  };
+  try {
+    const response = await axios.post("/api/details", {
+      name,
+      email,
+      details,
+    });
+
+    if (response.status === 200) {
+      console.log("Saved successfully!");
+
+      // Reset fields
+      setName("");
+      setEmail("");
+      setDetails("");
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error);
+  }
+};
+
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <form onSubmit={handleSubmit}>
