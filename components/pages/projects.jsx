@@ -67,12 +67,9 @@ const Projects = () => {
                       An AI-powered web app that generates ideas for you.
                     </span>
                   </div>
-
-                  <ShimmerButton>
-                    <a href="https://ideagenie.netlify.app/" target="_blank">
-                      View!
-                    </a>
-                  </ShimmerButton>
+                  <a href="https://ideagenie.netlify.app/" target="_blank">
+                    <ShimmerButton>View!</ShimmerButton>{" "}
+                  </a>
                 </div>
               </MagicCard>
             </div>
@@ -92,13 +89,9 @@ const Projects = () => {
                       An AI-powered web app that generates essays for you.
                     </span>
                   </div>
-
-                  <ShimmerButton>
-                    {" "}
-                    <a href="https://aiessaypro.netlify.app/" target="_blank">
-                      View!
-                    </a>
-                  </ShimmerButton>
+                  <a href="https://aiessaypro.netlify.app/" target="_blank">
+                    <ShimmerButton> View!</ShimmerButton>{" "}
+                  </a>
                 </div>
               </MagicCard>
             </div>
@@ -118,13 +111,9 @@ const Projects = () => {
                       A Social Media Marketing Agency.
                     </span>
                   </div>
-
-                  <ShimmerButton>
-                    {" "}
-                    <a href="https://aiessaypro.netlify.app/" target="_blank">
-                      View!
-                    </a>
-                  </ShimmerButton>
+                  <a href="https://aiessaypro.netlify.app/" target="_blank">
+                    <ShimmerButton> View!</ShimmerButton>{" "}
+                  </a>
                 </div>
               </MagicCard>
             </div>
