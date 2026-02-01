@@ -90,7 +90,7 @@ const CircularText = ({
   return (
     <motion.div
       initial={{ rotate: 0 }}
-      className={`mx-auto rounded-full w-[110px] h-[110px] md:w-[140px] md:h-[140px] text-white font-extralight text-center cursor-pointer origin-center ${className}`}
+      className={`mx-auto rounded-full w-[100px] h-[100px] md:w-[130px] md:h-[130px] text-white font-extralight text-center cursor-pointer origin-center ${className}`}
       animate={controls}
       onUpdate={(latest) => setCurrentRotation(Number(latest.rotate))}
       onMouseEnter={handleHoverStart}

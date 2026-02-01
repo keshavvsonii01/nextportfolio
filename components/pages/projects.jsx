@@ -1,127 +1,112 @@
-import { MagicCard } from "../magicui/magic-card";
-import Image from "next/image";
-import { ShimmerButton } from "@/components/magicui/shimmer-button";
-import SplitText from "../ui/SplitText";
+'use client';
 
-const Projects = () => {
-  // const items = [
-  //   {
-  //     image: "/images/pic14.png",
-  //     link: "https://ideagenie.netlify.app/",
-  //     title: "IDEA GENIE",
-  //     description: "An AI-powered web app that generates ideas for you.",
-  //   },
-  //   {
-  //     image: "/images/pic12.png",
-  //     link: "https://kreativevilla.in/",
-  //     title: "KREATIVEVILLA",
-  //     description: "A Social Media Marketing Agency.",
-  //   },
-  //   {
-  //     image: "/images/pic15.png",
-  //     link: "https://aiessaypro.netlify.app/",
-  //     title: "AI Essay Generator",
-  //     description: "An AI-powered web app that generates essays for you.",
-  //   },
-  //   // {
-  //   //   image: "https://picsum.photos/600/600?grayscale",
-  //   //   link: "https://google.com/",
-  //   //   title: "Item 4",
-  //   //   description: "This is pretty cool, right?",
-  //   // },
-  // ];
+import React from 'react';
 
+export default function ProjectsSection() {
   return (
-    <>
-      <div className="h-fit" id="Works">
-        <div className="h-fit bg-black text-white  p-8 mx-4  shadow-xl rounded-lg">
-          <div className="flex flex-col items-center w-full my-2">
-            <SplitText
-              text="PROJECTS"
-              className="text-[3.5rem] md:text-[4.4rem] lg:text-8xl font-extrabold text-center p-2 mb-2"
-              delay={200}
-              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
-              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-              easing="easeOutCubic"
-              threshold={0.2}
-              rootMargin="-50px"
-            />
+    <section className="w-full py-32 px-6">
+      {/* Section Header */}
+      <div className="max-w-7xl mx-auto mb-24">
+        <h2 className="text-4xl md:text-7xl font-bold uppercase mb-4">
+          Selected Work
+        </h2>
+        <p className="text-neutral-400 max-w-xl">
+          A few projects that showcase my approach to SaaS UI and conversion-focused design.
+        </p>
+      </div>
+
+      {/* Projects Wrapper */}
+      <div className="max-w-7xl mx-auto flex flex-col gap-40">
+
+        {/* Project 1 — IdeaGenie */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          
+          {/* Project Image */}
+          <div className="w-full">
+            {/* Replace with Image / Screenshot */}
+            <div className="aspect-[16/10] bg-neutral-900 rounded-xl ring-1 ring-white/25" />
           </div>
-          {/* <div style={{ height: "100%", position: "relative" }}>
-          <InfiniteMenu className="text-xl" items={items} />
-        </div> */}
-          <div className="flex flex-wrap p-2 gap-y-4 shadow-2xl rounded-xl">
-            <div className="flex flex-2/4 w-3/4 justify-around sm:p-4 rounded-2xl">
-              <MagicCard>
-                <div className="p-4 flex flex-col items-center justify-center">
-                  <Image
-                    src="/images/pic14.png"
-                    alt="pic14"
-                    width={400}
-                    height={500}
-                    className="rounded-lg w-fit"
-                  />
-                  <div className="flex flex-col items-center justify-center text-center my-6">
-                    <p className="m-4 text-2xl font-bold">IDEA GENIE</p>
-                    <span className="text-lg italic ">
-                      An AI-powered web app that generates ideas for you.
-                    </span>
-                  </div>
-                  <a href="https://ideagenie.netlify.app/" target="_blank">
-                    <ShimmerButton>View!</ShimmerButton>{" "}
-                  </a>
-                </div>
-              </MagicCard>
+
+          {/* Project Content */}
+          <div className="flex flex-col gap-6">
+            <span className="text-sm uppercase tracking-wide text-neutral-500">
+              SaaS Web Application
+            </span>
+
+            <h3 className="text-3xl md:text-4xl font-semibold">
+              IdeaGenie
+            </h3>
+
+            <p className="text-neutral-300 text-lg">
+              An AI-assisted web app designed to help users generate and organize ideas quickly.
+            </p>
+
+            <p className="text-neutral-400">
+              Designed and built the frontend with a focus on clarity, performance, and intuitive user flow.
+              The interface prioritizes quick input, readable output, and distraction-free usage.
+            </p>
+
+            <div className="text-sm text-neutral-500">
+              <span className="block">Role: UI design, Frontend development, Backend Development</span>
+              <span className="block">Stack: Next.js · Tailwind · AI API</span>
             </div>
-            <div className="flex flex-2/4 w-3/4 justify-around sm:p-4 rounded-2xl">
-              <MagicCard>
-                <div className="p-4 flex flex-col items-center justify-center">
-                  <Image
-                    src="/images/pic15.png"
-                    alt="pic14"
-                    width={400}
-                    height={500}
-                    className="rounded-lg w-fit"
-                  />
-                  <div className="flex flex-col items-center justify-center text-center my-6">
-                    <p className="m-4 text-2xl font-bold">AI ESSAY GENERATOR</p>
-                    <span className="text-lg italic ">
-                      An AI-powered web app that generates essays for you.
-                    </span>
-                  </div>
-                  <a href="https://aiessaypro.netlify.app/" target="_blank">
-                    <ShimmerButton> View!</ShimmerButton>{" "}
-                  </a>
-                </div>
-              </MagicCard>
-            </div>
-            <div className="flex flex-2/4 w-3/4 justify-around sm:p-4 rounded-2xl">
-              <MagicCard>
-                <div className="p-4 flex flex-col items-center justify-center">
-                  <Image
-                    src="/images/pic12.png"
-                    alt="pic14"
-                    width={400}
-                    height={500}
-                    className="rounded-lg w-fit"
-                  />
-                  <div className="flex flex-col items-center justify-center text-center my-6">
-                    <p className="m-4 text-2xl font-bold">KREATIVEVILLA</p>
-                    <span className="text-lg italic ">
-                      A Social Media Marketing Agency.
-                    </span>
-                  </div>
-                  <a href="https://aiessaypro.netlify.app/" target="_blank">
-                    <ShimmerButton> View!</ShimmerButton>{" "}
-                  </a>
-                </div>
-              </MagicCard>
+
+            <div>
+              <a
+                href="#"
+                className="inline-block mt-4 text-white underline underline-offset-4"
+              >
+                View Live →
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </>
-  );
-};
 
-export default Projects;
+        {/* Project 2 — Digital Agency Dummy */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          
+          {/* Project Content */}
+          <div className="flex flex-col gap-6 order-2 md:order-1">
+            <span className="text-sm uppercase tracking-wide text-neutral-500">
+              Landing Page
+            </span>
+
+            <h3 className="text-3xl md:text-4xl font-semibold">
+              Digital Agency Landing Page
+            </h3>
+
+            <p className="text-neutral-300 text-lg">
+              A conversion-focused landing page designed to turn visitors into qualified leads for digital agencies.
+            </p>
+
+            <p className="text-neutral-400">
+              Built as a focused SaaS-style landing page with clear messaging, strong visual hierarchy,
+              and performance-first frontend practices.
+            </p>
+
+            <div className="text-sm text-neutral-500">
+              <span className="block">Role: UI design, Frontend development</span>
+              <span className="block">Stack: Next.js · Tailwind</span>
+            </div>
+
+            <div>
+              <a
+                href="#"
+                className="inline-block mt-4 text-white underline underline-offset-4"
+              >
+                View Project →
+              </a>
+            </div>
+          </div>
+
+          {/* Project Image */}
+          <div className="w-full order-1 md:order-2">
+            {/* Replace with Image / Screenshot */}
+            <div className="aspect-[16/10] bg-neutral-900 rounded-xl ring-1 ring-white/25" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}

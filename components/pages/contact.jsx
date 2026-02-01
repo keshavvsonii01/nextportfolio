@@ -19,6 +19,18 @@ const Contact = () => {
           </a>
           <hr className="border-b-3 border-stone-400" />
         </div>
+        <div className="text-sm font-light md:text-base">
+          <h1>
+            Let’s build a high-converting landing page in 5–7 days.
+          </h1>
+          <br />
+          Email me → &nbsp;
+          <a href="mailto:keshavvsonii01@gmail.com" className="font-bold">keshavvsonii01@gmail.com</a>
+          <br />
+          <span className="text-neutral-400 text-sm">
+            Usually replies within 24 hours.
+          </span>
+        </div>
       </div>
     </>
   );

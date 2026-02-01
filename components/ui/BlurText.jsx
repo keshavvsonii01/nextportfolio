@@ -8,7 +8,7 @@ const BlurText = ({
   delay = 200,
   className = '',
   animateBy = 'words', // 'words' or 'letters'
-  direction = 'top', // 'top' or 'bottom'
+  direction = 'top',
   threshold = 0.1,
   rootMargin = '0px',
   animationFrom,
@@ -16,10 +16,25 @@ const BlurText = ({
   easing = 'easeOutCubic',
   onAnimationComplete,
 }) => {
-  const elements = animateBy === 'words' ? text.split(' ') : text.split('');
+  const ref = useRef(null);
   const [inView, setInView] = useState(false);
-  const ref = useRef();
   const animatedCount = useRef(0);
+
+  // Split text into paragraphs
+  const paragraphs = text.split('\n\n');
+
+  // Flatten words/letters but keep paragraph index
+  const elements = paragraphs.flatMap((paragraph, pIndex) => {
+    const parts = animateBy === 'words'
+      ? paragraph.split(' ')
+      : paragraph.split('');
+
+    return parts.map((part, i) => ({
+      value: part,
+      paragraphIndex: pIndex,
+      isLastInParagraph: i === parts.length - 1,
+    }));
+  });
 
   const defaultFrom =
     direction === 'top'
@@ -30,7 +45,10 @@ const BlurText = ({
     {
       filter: 'blur(5px)',
       opacity: 0.5,
-      transform: direction === 'top' ? 'translate3d(0,5px,0)' : 'translate3d(0,-5px,0)',
+      transform:
+        direction === 'top'
+          ? 'translate3d(0,5px,0)'
+          : 'translate3d(0,-5px,0)',
     },
     { filter: 'blur(0px)', opacity: 1, transform: 'translate3d(0,0,0)' },
   ];
@@ -46,8 +64,7 @@ const BlurText = ({
       { threshold, rootMargin }
     );
 
-    observer.observe(ref.current);
-
+    if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, [threshold, rootMargin]);
 
@@ -57,14 +74,17 @@ const BlurText = ({
       from: animationFrom || defaultFrom,
       to: inView
         ? async (next) => {
-          for (const step of (animationTo || defaultTo)) {
-            await next(step);
+            for (const step of animationTo || defaultTo) {
+              await next(step);
+            }
+            animatedCount.current += 1;
+            if (
+              animatedCount.current === elements.length &&
+              onAnimationComplete
+            ) {
+              onAnimationComplete();
+            }
           }
-          animatedCount.current += 1;
-          if (animatedCount.current === elements.length && onAnimationComplete) {
-            onAnimationComplete();
-          }
-        }
         : animationFrom || defaultFrom,
       delay: i * delay,
       config: { easing },
@@ -72,21 +92,30 @@ const BlurText = ({
   );
 
   return (
-    <p ref={ref} className={`blur-text ${className}`}>
-      {springs.map((props, index) => (
-        <animated.span
-          key={index}
-          style={{
-            ...props,
-            display: 'inline-block',
-            willChange: 'transform, filter, opacity',
-          }}
-        >
-          {elements[index] === ' ' ? '\u00A0' : elements[index]}
-          {animateBy === 'words' && index < elements.length - 1 && '\u00A0'}
-        </animated.span>
+    <div ref={ref} className={`blur-text ${className}`}>
+      {paragraphs.map((_, pIndex) => (
+        <p key={pIndex} className="mb-4">
+          {springs.map((props, i) => {
+            const el = elements[i];
+            if (el.paragraphIndex !== pIndex) return null;
+
+            return (
+              <animated.span
+                key={i}
+                style={{
+                  ...props,
+                  display: 'inline-block',
+                  willChange: 'transform, filter, opacity',
+                }}
+              >
+                {el.value}
+                {animateBy === 'words' && !el.isLastInParagraph && '\u00A0'}
+              </animated.span>
+            );
+          })}
+        </p>
       ))}
-    </p>
+    </div>
   );
 };
 

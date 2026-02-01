@@ -7,7 +7,7 @@ const FastScroller = () => {
        
           {" "}
           <ScrollVelocity
-            texts={["Full Stack Developer", "FreeLancer"]}
+            texts={["• High-conversion landing pages • SaaS & startups", "• Conversion-driven • Fast delivery"]}
             velocity={100}
             className="custom-scroll-text"
           />

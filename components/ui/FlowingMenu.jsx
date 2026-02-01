@@ -1,120 +1,76 @@
 'use client';
-import React from 'react';
+
+import React, { useRef } from 'react';
 import { gsap } from 'gsap';
 
 function FlowingMenu({ items = [] }) {
   return (
-    <div className="w-full h-full overflow-hidden">
-      <nav className="flex flex-col h-full m-0 p-0">
+    <div className="w-full">
+      <nav className="flex flex-col">
         {items.map((item, idx) => (
-          <MenuItem key={idx} {...item} />
+          <MenuItem key={idx} text={item.text} link={item.link} />
         ))}
       </nav>
     </div>
   );
 }
 
-function MenuItem({ link, text, image }) {
-  const itemRef = React.useRef(null);
-  const marqueeRef = React.useRef(null);
-  const marqueeInnerRef = React.useRef(null);
+function MenuItem({ text, link }) {
+  const containerRef = useRef(null);
+  const overlayRef = useRef(null);
 
-  const animationDefaults = { duration: 0.6, ease: 'expo' };
+  const animationDefaults = { duration: 0.45, ease: 'expo.out' };
 
-  const findClosestEdge = (mouseX, mouseY, width, height) => {
-    const topEdgeDist = (mouseX - width / 2) ** 2 + mouseY ** 2;
-    const bottomEdgeDist = (mouseX - width / 2) ** 2 + (mouseY - height) ** 2;
-    return topEdgeDist < bottomEdgeDist ? 'top' : 'bottom';
+  const getEntryDirection = (e, rect) => {
+    const y = e.clientY - rect.top;
+    return y < rect.height / 2 ? 'top' : 'bottom';
   };
 
-  const handleMouseEnter = (ev) => {
-    if (!itemRef.current || !marqueeRef.current || !marqueeInnerRef.current) return;
-    const rect = itemRef.current.getBoundingClientRect();
-    const edge = findClosestEdge(
-      ev.clientX - rect.left,
-      ev.clientY - rect.top,
-      rect.width,
-      rect.height
-    );
+  const handleEnter = (e) => {
+    if (!containerRef.current || !overlayRef.current) return;
 
-    gsap.timeline({ defaults: animationDefaults })
-      .set(marqueeRef.current, { y: edge === 'top' ? '-101%' : '101%' })
-      .set(marqueeInnerRef.current, { y: edge === 'top' ? '101%' : '-101%' })
-      .to([marqueeRef.current, marqueeInnerRef.current], { y: '0%' });
+    const rect = containerRef.current.getBoundingClientRect();
+    const from = getEntryDirection(e, rect) === 'top' ? '-100%' : '100%';
+
+    gsap.set(overlayRef.current, { y: from });
+    gsap.to(overlayRef.current, { y: '0%', ...animationDefaults });
   };
 
-  const handleMouseLeave = (ev) => {
-    if (!itemRef.current || !marqueeRef.current || !marqueeInnerRef.current) return;
-    const rect = itemRef.current.getBoundingClientRect();
-    const edge = findClosestEdge(
-      ev.clientX - rect.left,
-      ev.clientY - rect.top,
-      rect.width,
-      rect.height
-    );
+  const handleLeave = (e) => {
+    if (!containerRef.current || !overlayRef.current) return;
 
-    gsap.timeline({ defaults: animationDefaults })
-      .to(marqueeRef.current, { y: edge === 'top' ? '-101%' : '101%' })
-      .to(marqueeInnerRef.current, { y: edge === 'top' ? '101%' : '-101%' });
+    const rect = containerRef.current.getBoundingClientRect();
+    const to = getEntryDirection(e, rect) === 'top' ? '-100%' : '100%';
+
+    gsap.to(overlayRef.current, { y: to, ...animationDefaults });
   };
-
-  const repeatedMarqueeContent = Array.from({ length: 4 }).map((_, idx) => (
-    <React.Fragment key={idx}>
-      <span className="text-[#060606] uppercase font-normal text-[2.5vh] md:text-[3vh] leading-[1.2] p-[1vh_1vw_0]">
-        {text}
-      </span>
-      <div
-        className="w-[120px] h-[6vh] my-[2em] mx-[2vw] p-[1em_0] rounded-[50px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${image})` }}
-      />
-    </React.Fragment>
-  ));
 
   return (
-    <div className="flex-1 relative overflow-hidden text-center shadow-[0_-1px_0_0_#fff]" ref={itemRef}>
+    <div
+      ref={containerRef}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+      className="relative h-[16vh] flex items-center justify-center overflow-hidden border-b "
+    >
+      {/* Base text */}
       <a
-        className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-semibold text-white text-[2.5vh] md:text-[3vh] hover:text-[#060606] focus:text-white focus-visible:text-[#060606]"
         href={link}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        className="relative z-10 uppercase font-semibold text-white text-[2.6vh] md:text-[3.2vh]"
       >
         {text}
       </a>
+
+      {/* Hover overlay */}
       <div
-        className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none bg-white translate-y-[101%]"
-        ref={marqueeRef}
+        ref={overlayRef}
+        className="absolute inset-0 flex items-center justify-center bg-white z-20 translate-y-full"
       >
-        <div className="h-full w-[200%] overflow-hidden whitespace-nowrap flex" ref={marqueeInnerRef}>
-          <div className="flex items-center relative h-full w-[200%] will-change-transform animate-marquee">
-            {repeatedMarqueeContent}
-          </div>
-        </div>
+        <span className="uppercase font-semibold text-black text-[2.6vh] md:text-[3vh]">
+          {text}
+        </span>
       </div>
     </div>
   );
 }
 
 export default FlowingMenu;
-
-// Note: this is also needed
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-//   theme: {
-//     extend: {
-//       translate: {
-//         '101': '101%',
-//       },
-//       keyframes: {
-        // marquee: {
-        //   'from': { transform: 'translateX(0%)' },
-        //   'to': { transform: 'translateX(-50%)' }
-        // }
-//       },
-//       animation: {
-//         marquee: 'marquee 15s linear infinite'
-//       }
-//     }
-//   },
-//   plugins: [],
-// };
