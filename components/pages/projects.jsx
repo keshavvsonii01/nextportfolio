@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 export default function ProjectsSection() {
   return (
@@ -22,9 +23,9 @@ export default function ProjectsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           
           {/* Project Image */}
-          <div className="w-full">
+          <div className="w-full transition-transform duration-300 ease-in-out">
             {/* Replace with Image / Screenshot */}
-            <div className="aspect-[16/10] bg-neutral-900 rounded-xl ring-1 ring-white/25" />
+            <Image src = "/images/Ideagen2.png" alt="IdeaGenie Project Screenshot" width={640} height={400} className="aspect-[16/10] bg-neutral-900 rounded-xl ring-2 ring-white/25" />
           </div>
 
           {/* Project Content */}
@@ -38,7 +39,7 @@ export default function ProjectsSection() {
             </h3>
 
             <p className="text-neutral-300 text-lg">
-              An AI-assisted web app designed to help users generate and organize ideas quickly.
+              “An AI-assisted SaaS web app for generating structured, ready-to-use content ideas in seconds.”
             </p>
 
             <p className="text-neutral-400">
@@ -48,12 +49,13 @@ export default function ProjectsSection() {
 
             <div className="text-sm text-neutral-500">
               <span className="block">Role: UI design, Frontend development, Backend Development</span>
-              <span className="block">Stack: Next.js · Tailwind · AI API</span>
+              <span className="block">Stack: Next.js · Tailwind · Gemini API</span>
             </div>
 
             <div>
               <a
-                href="#"
+                target="_blank"
+                href="https://ideagen-gold.vercel.app/"
                 className="inline-block mt-4 text-white underline underline-offset-4"
               >
                 View Live →

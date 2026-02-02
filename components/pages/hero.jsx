@@ -27,8 +27,11 @@ const Hero = () => {
             Delivered in 5–7 days • SaaS-focused • Conversion-driven{" "}
           </h1>
         </div>
-        <button className="mt-10 px-6 py-3 w-56 lg:w-64 rounded-full border border-neutral-600 hover:border-neutral-200 hover:bg-neutral-950 font-medium transition-300">
-          Get a Landing Page
+        <button
+         className="mt-10 px-6 py-3 w-56 lg:w-64 rounded-full border border-neutral-600 hover:border-neutral-200 hover:bg-neutral-950 font-medium transition-300 cursor-pointer">
+          <a href="/contact">
+          Get a Landing Page →
+          </a>
         </button>
       </div>
       <div className="absolute p-6 md:p-10 lg:p-14 bottom-0 right-0 md:right-8 z-50">

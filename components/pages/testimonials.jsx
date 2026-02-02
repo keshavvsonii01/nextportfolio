@@ -42,7 +42,7 @@ const Testimonials = () => {
                     Rishi Pratap Singh
                   </span>
                   <span className="leading-base text-pretty text-sm ">
-                    <a href="https://rishipratap.com/">-Client</a>
+                    <a href="https://rishipratap.com/">Client</a>
                   </span>
                 </div>
               </div>
