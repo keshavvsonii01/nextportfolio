@@ -25,7 +25,7 @@ export default function ProjectsSection() {
           {/* Project Image */}
           <div className="w-full transition-transform duration-300 ease-in-out">
             {/* Replace with Image / Screenshot */}
-            <Image src = "/images/Ideagen2.png" alt="IdeaGenie Project Screenshot" width={640} height={400} className="aspect-[16/10] bg-neutral-900 rounded-xl ring-2 ring-white/25" />
+            <Image src = "/images/IdeaGen2.png" alt="IdeaGenie Project Screenshot" width={640} height={400} className="aspect-[16/10] bg-neutral-900 rounded-xl ring-2 ring-white/25" />
           </div>
 
           {/* Project Content */}
@@ -74,7 +74,7 @@ export default function ProjectsSection() {
             </span>
 
             <h3 className="text-3xl md:text-4xl font-semibold">
-              Digital Agency Landing Page
+              DigitalQ Agency
             </h3>
 
             <p className="text-neutral-300 text-lg">
@@ -93,7 +93,8 @@ export default function ProjectsSection() {
 
             <div>
               <a
-                href="#"
+                target="_blank"
+                href="https://digitalqagency.vercel.app/"
                 className="inline-block mt-4 text-white underline underline-offset-4"
               >
                 View Project →
@@ -104,10 +105,9 @@ export default function ProjectsSection() {
           {/* Project Image */}
           <div className="w-full order-1 md:order-2">
             {/* Replace with Image / Screenshot */}
-            <div className="aspect-[16/10] bg-neutral-900 rounded-xl ring-1 ring-white/25" />
+            <Image src = "/images/DigitalQ.png" alt="DigitalQ Project Screenshot" width={640} height={400} className="aspect-[16/10] bg-neutral-900 rounded-xl ring-2 ring-white/25" />
           </div>
         </div>
-
       </div>
     </section>
   );
