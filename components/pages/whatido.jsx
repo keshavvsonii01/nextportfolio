@@ -5,22 +5,26 @@ const Whatido = () => {
   const demoItems = [
     {
       link: "#",
-      text: "Conversion-focused landing pages",
+      text: "FULL-STACK WEB DEVELOPMENT",
+      text2: "End-to-end web applications with modern frontend architectures, APIs, authentication, and database-driven workflows.",
       image: "https://picsum.photos/600/400?grayscale&blur=2&random=1",
     },
     {
       link: "#",
-      text: "SaaS-first UI & frontend",
+      text: "C# / .NET BACKEND & APIs",
+      text2: "REST APIs, business logic, data models, and backend services built with C#/.NET, Node.js, SQL, and modern development practices.",
       image: "https://picsum.photos/600/400?grayscale&blur=2&random=2",
     },
     {
       link: "#",
-      text: "Clear messaging & structure",
+      text: "REACT / NEXT.JS APPLICATIONS",
+      text2: "Turning requirements into maintainable software through thoughtful architecture, iteration, testing, and performance optimization.",
       image: "https://picsum.photos/600/400?grayscale&blur=2&random=3",
     },
     {
       link: "#",
-      text: "Fast delivery (5–7 days)",
+      text: "AI INTEGRATION & AUTOMATION",
+      text2: "Integrating LLMs and AI APIs into practical products, workflows, and user experiences.",
       image: "https://picsum.photos/600/400?grayscale&blur=2&random=4",
     },
   ];
@@ -40,7 +44,7 @@ const Whatido = () => {
           />
         </div>
         <div>
-          <h1 className="text-center text-lg font-light text-neutral-400 mt-4">Everything you need for a high-performing SaaS landing page.</h1>
+          <h1 className="text-center text-lg font-light text-neutral-400 mt-4">A software engineer proficient across web, backend & AI.</h1>
         </div>
         <div className="md:mt-10 p-2">
           <div style={{ height: "600px", position: "relative" }}>

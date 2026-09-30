@@ -8,6 +8,8 @@ import Testimonials from "@/components/pages/testimonials";
 import Whatido from "@/components/pages/whatido";
 import LenisWrapper from "@/components/LenisWrapper";
 import "lenis/dist/lenis.css";
+import Experience from "@/components/pages/experience";
+import Skills from "@/components/pages/skills";
 
 export const metadata = {
   title: "Keshav Soni",
@@ -31,6 +33,8 @@ export default function Home() {
         <About />
         <Whatido />
         <Projects />
+        <Experience />
+        <Skills />
         <Testimonials />
         <Contact />
         <Footer />

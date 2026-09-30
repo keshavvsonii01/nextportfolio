@@ -12,7 +12,7 @@ export default function ProjectsSection() {
           Selected Work
         </h2>
         <p className="text-neutral-400 max-w-xl">
-          A few projects that showcase my approach to SaaS UI and conversion-focused design.
+          A selection of products and systems I've designed, built, and shipped.
         </p>
       </div>
 
@@ -25,13 +25,13 @@ export default function ProjectsSection() {
           {/* Project Image */}
           <div className="w-full transition-transform duration-300 ease-in-out">
             {/* Replace with Image / Screenshot */}
-            <Image src = "/images/IdeaGen2.png" alt="IdeaGenie Project Screenshot" width={640} height={400} className="aspect-[16/10] bg-neutral-900 rounded-xl ring-2 ring-white/25" />
+            <a href="https://ideagen-gold.vercel.app/" target='_blank'><Image src = "/images/IdeaGen2.png" alt="IdeaGenie Project Screenshot" width={640} height={400} className="aspect-[16/10] bg-neutral-900 rounded-xl ring-2 ring-white/25" /></a>
           </div>
 
           {/* Project Content */}
           <div className="flex flex-col gap-6">
             <span className="text-sm uppercase tracking-wide text-neutral-500">
-              SaaS Web Application
+              AI-Powered Web Application
             </span>
 
             <h3 className="text-3xl md:text-4xl font-semibold">
@@ -39,7 +39,7 @@ export default function ProjectsSection() {
             </h3>
 
             <p className="text-neutral-300 text-lg">
-              “An AI-assisted SaaS web app for generating structured, ready-to-use content ideas in seconds.”
+              “An AI-powered content generation platform that turns structured inputs into ready-to-use content ideas and scripts.”
             </p>
 
             <p className="text-neutral-400">
@@ -48,7 +48,7 @@ export default function ProjectsSection() {
             </p>
 
             <div className="text-sm text-neutral-500">
-              <span className="block">Role: UI design, Frontend development, Backend Development</span>
+              <span className="block">Role: Full Stack Development · UI/UX · AI Integration</span>
               <span className="block">Stack: Next.js · Tailwind · Gemini API</span>
             </div>
 
@@ -70,7 +70,7 @@ export default function ProjectsSection() {
           {/* Project Content */}
           <div className="flex flex-col gap-6 order-2 md:order-1">
             <span className="text-sm uppercase tracking-wide text-neutral-500">
-              Landing Page
+              Production Web Application
             </span>
 
             <h3 className="text-3xl md:text-4xl font-semibold">
@@ -78,7 +78,7 @@ export default function ProjectsSection() {
             </h3>
 
             <p className="text-neutral-300 text-lg">
-              A conversion-focused landing page designed to turn visitors into qualified leads for digital agencies.
+              A production web experience built with a focus on responsive UI, performance, clear information architecture, and maintainable frontend development.
             </p>
 
             <p className="text-neutral-400">
@@ -105,7 +105,9 @@ export default function ProjectsSection() {
           {/* Project Image */}
           <div className="w-full order-1 md:order-2">
             {/* Replace with Image / Screenshot */}
-            <Image src = "/images/DigitalQ.png" alt="DigitalQ Project Screenshot" width={640} height={400} className="aspect-[16/10] bg-neutral-900 rounded-xl ring-2 ring-white/25" />
+            <a href="https://digitalqagency.vercel.app/" target='_blank'>
+              <Image src = "/images/DigitalQ.png" alt="DigitalQ Project Screenshot" width={640} height={400} className="aspect-[16/10] bg-neutral-900 rounded-xl ring-2 ring-white/25" />
+            </a>
           </div>
         </div>
       </div>

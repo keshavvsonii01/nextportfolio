@@ -8,14 +8,14 @@ function FlowingMenu({ items = [] }) {
     <div className="w-full">
       <nav className="flex flex-col">
         {items.map((item, idx) => (
-          <MenuItem key={idx} text={item.text} link={item.link} />
+          <MenuItem key={idx} text={item.text} text2={item.text2} link={item.link} />
         ))}
       </nav>
     </div>
   );
 }
 
-function MenuItem({ text, link }) {
+function MenuItem({ text, text2, link }) {
   const containerRef = useRef(null);
   const overlayRef = useRef(null);
 
@@ -58,15 +58,16 @@ function MenuItem({ text, link }) {
         className="relative z-10 uppercase font-semibold text-white text-[2.6vh] md:text-[3.2vh]"
       >
         {text}
+
       </a>
 
       {/* Hover overlay */}
       <div
         ref={overlayRef}
-        className="absolute inset-0 flex items-center justify-center bg-white z-20 translate-y-full"
+        className="absolute inset-0 flex items-center justify-center bg-white z-20 p-2 translate-y-full"
       >
-        <span className="uppercase font-semibold text-black text-[2.6vh] md:text-[3vh]">
-          {text}
+        <span className="uppercase items-center justify-center font-semibold text-black text-[1.6vh] md:text-[2vh]">
+            {text2}
         </span>
       </div>
     </div>

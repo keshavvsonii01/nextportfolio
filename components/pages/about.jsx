@@ -40,11 +40,13 @@ const About = () => {
         </div>
         <div className={`text-center mt-2`}>
           <BlurText
-            text={`I specialize in building high-conversion landing pages for SaaS founders and startups.
+            text={`I approach software development by understanding the problem before writing the solution.
 
-            My focus is simple: clear messaging, strong visual hierarchy, and fast performance — so visitors immediately understand your product and take action.
+I break complex requirements into clear components, data flows, APIs, and technical decisions — then build across the stack with maintainability and performance in mind.
 
-            I work closely with founders, keep communication clear, and deliver polished landing pages in 5–7 days.`}
+I iterate through testing, code reviews, debugging, and refinement to turn working software into reliable software.
+
+Understand → Design → Build → Refine`}
             delay={50}
             animateBy="words"
             direction="top"
@@ -53,7 +55,7 @@ const About = () => {
         </div>
         <div className="text-center">
           <h1 className="text-sm text-neutral-500 lg:-mt-2">
-            Conversion First Design • SaaS-focused • Fast turnaround (5-7 days)
+            Problem-first · Full-stack · Maintainable · Performance-minded
           </h1>
         </div>
       </div>
