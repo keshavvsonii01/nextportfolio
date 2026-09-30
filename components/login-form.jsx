@@ -49,11 +49,14 @@ export function LoginForm({ className, ...props }) {
               <div className="flex size-8 items-center justify-center rounded-md">
                 <GalleryVerticalEnd className="size-6" />
               </div>
-              <span className="sr-only">Hi There, I'm Keshav Soni.</span>
+              <span className="sr-only">LET'S CONNECT</span>
             </a>
-            <h1 className="text-2xl font-bold">Hi There, I'm Keshav Soni.</h1>
-            <div className="text-center text-sm">
-              I would Love to hear from you.{" "}
+            <h1 className="text-2xl font-bold ">LET'S CONNECT</h1>
+            <div className="text-center text-sm text-gray-500">
+              Have something worth building?
+            </div>
+            <div className="text-center text-xs">
+              Whether it's a software engineering opportunity, a collaboration, or an interesting problem — I'd love to hear from you.
             </div>
           </div>
           <div className="flex flex-col gap-6">
@@ -76,14 +79,14 @@ export function LoginForm({ className, ...props }) {
                 placeholder="m@example.com"
                 required
               />
-              <Label htmlFor="Details"> More details about your Project</Label>
+              <Label htmlFor="Details"> Message: </Label>
               <textarea
                 id="Details"
                 value={details}
                 className=" h-24 rounded-md border p-2 placeholder:text-xs placeholder:lg:text-sm"
                 type="text"
                 onChange={(e) => setDetails(e.target.value)}
-                placeholder="Description of your project"
+                placeholder="Tell me what's on your mind..."
                 required
               />
             </div>
@@ -92,7 +95,7 @@ export function LoginForm({ className, ...props }) {
             </Button>
           </div>
           <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t"></div>
-          <span className="items-center text-center z-10 -my-2">Or</span>
+          <span className="items-center text-center z-10 -my-2">Prefer Email? </span>
           <div className="w-2/3 flex items-center justify-center mx-auto">
             <Button
               variant="outline"
@@ -106,6 +109,15 @@ export function LoginForm({ className, ...props }) {
           </div>
         </div>
       </form>
+
+
+      <div className="flex items-center justify-between">
+        <a href="https://drive.google.com/file/d/1jx3RUHKOGKppmn8IeHQV1rHkb3nfFxZE/view?usp=drive_link" target="_blank">Resume ↗</a>
+        <a href="https://www.linkedin.com/in/keshavvsoni01/" target="_blank">Linkedin ↗</a>
+        <a href="https://github.com/keshavvsonii01" target="_blank">Github ↗</a>
+        <a href="https://x.com/Keshavv01" target="_blank">X ↗</a>
+      </div>
+
       <div className="text-muted-foreground  text-center text-xs text-balance ">
         @ 2025 Keshav Soni.
         <br />

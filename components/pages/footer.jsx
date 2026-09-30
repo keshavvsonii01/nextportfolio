@@ -128,7 +128,7 @@ function Footer() {
           </div>
         </div>
         <div className="p-2 text-center">
-          <span className="text-xl font-light">© 2025 KESHAV SONI</span>
+          <span className="text-xl font-light">© 2026 KESHAV SONI</span>
         </div>
       </footer>
     </>

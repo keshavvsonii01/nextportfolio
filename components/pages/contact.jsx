@@ -6,7 +6,7 @@ const Contact = () => {
         id="contact"
       >
         <h1 className="text-normal md:text-2xl md:font-light border-b-2 border-stone-300 m-4">
-          Got a Project? Need an unfair advantage?
+          LET'S BUILD SOMETHING!
         </h1>
         <div className="p-3 md:p-6">
           <a href="/contact">
@@ -21,14 +21,18 @@ const Contact = () => {
         </div>
         <div className="text-sm font-light md:text-base">
           <h1>
-            Let’s build a high-converting landing page in 5–7 days.
+            I'm always interested in building useful products, solving interesting problems, and working with good people.
           </h1>
           <br />
           Email me → &nbsp;
           <a href="mailto:keshavvsonii01@gmail.com" className="font-bold">keshavvsonii01@gmail.com</a>
           <br />
+          <span className="text-sm">
+            Open to software engineering opportunities, collaborations, and interesting problems.
+          </span>
+          <br />
           <span className="text-neutral-400 text-sm">
-            Usually replies within 24 hours.
+            Software engineering · Full-stack development · AI
           </span>
         </div>
       </div>
