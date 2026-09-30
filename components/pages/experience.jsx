@@ -93,7 +93,7 @@ const Experience = () => {
   };
 
   return (
-    <section className="relative py-24">
+    <section className="relative py-24" id= "Experience">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
@@ -282,7 +282,7 @@ const Experience = () => {
             </div>
 
             <button className="px-6 py-3 rounded-lg text-sm md:text-base bg-white text-black font-medium hover:scale-101 cursor-pointer">
-              View Projects →
+             <a href="https://github.com/keshavvsonii01" target="_blank">View Projects →</a>
             </button>
           </div>
         </div>

@@ -51,17 +51,12 @@ function Footer() {
                 <span className="link1">Services</span>
               </Link>
               <Link
-                href={"#Works"}
+                href={"#Experience"}
                 className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit hover:text-slate-200"
               >
-                <span className="link1">Works</span>
+                <span className="link1">Experience</span>
               </Link>
-              <Link
-                href={"#Testimonials"}
-                className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit hover:text-slate-200"
-              >
-                <span className="link1">Reviews</span>
-              </Link>
+
               <Link
                 href={"/contact"}
                 className="leading-base font-medium block relative overflow-hidden group h-fit link-text w-fit hover:text-slate-200"
@@ -78,6 +73,13 @@ function Footer() {
               <a
                 target="_blank"
                 className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit hover:text-slate-200"
+                href="https://drive.google.com/file/d/1jx3RUHKOGKppmn8IeHQV1rHkb3nfFxZE/view?usp=drive_link"
+              >
+                <span className="link1">Resume</span>
+              </a>
+              <a
+                target="_blank"
+                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit hover:text-slate-200"
                 href="https://www.linkedin.com/in/keshavvsoni01/"
               >
                 <span className="link1">Linkedin</span>
@@ -88,6 +90,14 @@ function Footer() {
                 href="https://github.com/keshavvsonii01"
               >
                 <span className="link1">Github</span>
+              </a>
+
+              <a
+                target="_blank"
+                className="font-medium block relative overflow-hidden group h-fit link-text leading-base w-fit hover:text-slate-200"
+                href="https://x.com/Keshavv01"
+              >
+                <span className="link1">X</span>
               </a>
             </div>
           </div>

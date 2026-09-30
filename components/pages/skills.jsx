@@ -63,7 +63,7 @@ const Skills = () => {
         {/* ================= HEADER ================= */}
         <div className="mb-20 text-center">
           <p className="text-sm tracking-[0.25em] text-neutral-500">
-            ENGINEERING STACK
+            ENGINEERING
           </p>
 
           <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
@@ -108,9 +108,6 @@ const Skills = () => {
                 : "border-white/20 shadow-[0_0_25px_rgba(255,255,255,0.05)]"
             }`}
           >
-            <span className="text-xs tracking-[0.25em] text-neutral-500">
-              BUILD
-            </span>
 
             <span className="mt-2 text-xl font-semibold">
               KESHAV

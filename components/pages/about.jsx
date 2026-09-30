@@ -9,7 +9,7 @@ const About = () => {
         className="p-6 mt-6 h-dvh flex flex-col items-center justify-center"
         id="about"
       >
-        <div className="p-8 mt-24 md:mt-0 lg:mt-2">
+        <div className="p-8 mt-36 md:mt-0 lg:mt-2">
           <TrueFocus
             sentence="How I work"
             manualMode={false}

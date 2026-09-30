@@ -34,7 +34,7 @@ const Whatido = () => {
         <div className="flex flex-col items-center w-full mt-12 sm:my-4">
           <SplitText
             text="WHAT YOU GET"
-            className="text-[3.3rem] md:text-[4.4rem] lg:text-8xl font-extrabold text-center mt-4 p-4"
+            className="text-[3.2rem] md:text-[4.4rem] lg:text-8xl font-extrabold text-center mt-8 md:mt-4 p-4"
             delay={200}
             animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
             animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
