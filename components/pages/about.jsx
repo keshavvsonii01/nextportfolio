@@ -6,7 +6,12 @@ const About = () => {
   return (
     <>
       <div
-        className="p-6 mt-6 h-dvh flex flex-col items-center justify-center"
+        className="
+          p-6 mt-6
+          min-h-screen h-auto
+          md:h-dvh
+          flex flex-col items-center justify-center
+        "
         id="about"
       >
         <div className="p-8 mt-36 md:mt-0 lg:mt-2">
@@ -35,10 +40,13 @@ const About = () => {
             showMobileWarning={false}
             showTooltip={true}
             displayOverlayContent={true}
-            overlayContent={<p className="tilted-card-demo-text"></p>}
+            overlayContent={
+              <p className="tilted-card-demo-text"></p>
+            }
           />
         </div>
-        <div className={`text-center mt-2`}>
+
+        <div className="text-center mt-2">
           <BlurText
             text={`I approach software development by understanding the problem before writing the solution.
 
@@ -53,6 +61,7 @@ Understand → Design → Build → Refine`}
             className="text-medium sm:text-lg md:font-medium lg:font-normal md:text-xl lg:text-2xl my-4"
           />
         </div>
+
         <div className="text-center">
           <h1 className="text-sm text-neutral-500 lg:-mt-2">
             Problem-first · Full-stack · Maintainable · Performance-minded

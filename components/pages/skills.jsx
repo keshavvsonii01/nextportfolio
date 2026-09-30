@@ -187,9 +187,6 @@ const Skills = () => {
                 : "border-white/20 shadow-[0_0_25px_rgba(255,255,255,0.05)]"
             }`}
           >
-            <span className="text-xs tracking-[0.25em] text-neutral-500">
-              BUILD
-            </span>
 
             <span className="mt-2 text-lg font-semibold">
               KESHAV

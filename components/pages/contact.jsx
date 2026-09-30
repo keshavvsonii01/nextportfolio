@@ -24,6 +24,7 @@ const Contact = () => {
             I'm always interested in building useful products, solving interesting problems, and working with good people.
           </h1>
           <br />
+          <br />
           Email me → &nbsp;
           <a href="mailto:keshavvsonii01@gmail.com" className="font-bold">keshavvsonii01@gmail.com</a>
           <br />
