@@ -48,6 +48,7 @@ const Whatido = () => {
         "
         id="Services"
       >
+        {/* Heading */}
         <div className="flex flex-col items-center w-full mt-12 sm:my-4">
           <SplitText
             text="WHAT YOU GET"
@@ -67,46 +68,45 @@ const Whatido = () => {
           />
         </div>
 
-        <div>
+        {/* Subtitle */}
+        <div className="px-4">
           <h1 className="text-center text-lg font-light text-neutral-400 mt-4">
             A software engineer proficient across web, backend & AI.
           </h1>
         </div>
 
-<div className="md:mt-10 p-2">
-  <div className="relative h-[500px] md:h-[600px]">
+        {/* Content */}
+        <div className="mt-12 md:mt-10 p-2">
 
-    {/* Desktop / Tablet */}
-    <div className="hidden md:block h-full">
-      <FlowingMenu items={demoItems} />
-    </div>
-
-    {/* Mobile */}
-    <div className="flex md:hidden h-full flex-col justify-center gap-4 mt-6 md:mt-0 px-2">
-      {demoItems.map((item, index) => (
-        <div
-          key={item.text}
-          className="border-b border-white/10 py-5"
-        >
-          <div className="flex items-center gap-4">
-            <span className="text-xs text-neutral-600">
-              0{index + 1}
-            </span>
-
-            <span className="text-base font-semibold text-neutral-200">
-              {item.text}
-            </span>
+          {/* Desktop / Tablet */}
+          <div className="hidden md:block h-[600px] relative">
+            <FlowingMenu items={demoItems} />
           </div>
 
-          <p className="mt-2 pl-8 text-sm leading-6 text-neutral-500">
-            {item.text2}
-          </p>
-        </div>
-      ))}
-    </div>
+          {/* Mobile */}
+          <div className="md:hidden flex flex-col gap-0 px-2">
+            {demoItems.map((item, index) => (
+              <div
+                key={item.text}
+                className="border-b border-white/10 py-6"
+              >
+                <div className="flex items-start gap-4">
+                  <span className="text-xs text-neutral-600 pt-1">
+                    0{index + 1}
+                  </span>
 
-  </div>
-</div>
+                  <span className="text-base font-semibold leading-6 text-neutral-200">
+                    {item.text}
+                  </span>
+                </div>
+
+                <p className="mt-3 pl-8 text-sm leading-6 text-neutral-500">
+                  {item.text2}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
